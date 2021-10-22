@@ -57,7 +57,9 @@ echo "---------INICIANDO INSTALAÇÃO DOS PRINCIPAIS PROGRAMAS------------------
 
   #NOTION
   echo "Instalando Notion..................."
-    if ! apt install notion
+    apt update
+    apt install snapd
+    if ! snap install notion-snap
       then 
         echo "Não foi possível instalar o Notion"
       exit 1
