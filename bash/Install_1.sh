@@ -57,7 +57,7 @@ echo "---------INICIANDO INSTALAÇÃO DOS PRINCIPAIS PROGRAMAS------------------
 
   #NOTION
   echo "Instalando Notion..................."
-    apt update
+    apt-get update
     apt install snapd
     if ! snap install notion-snap
       then 
