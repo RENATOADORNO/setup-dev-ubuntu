@@ -54,18 +54,6 @@ echo "---------INICIANDO INSTALAÇÃO DOS PRINCIPAIS PROGRAMAS------------------
       fi 
         echo "gnome-shell ativado com SUCESSO"
 
-
-  #NOTION
-  echo "Instalando Notion..................."
-    apt-get update
-    apt install snapd
-    if ! snap install notion-snap
-      then 
-        echo "Não foi possível instalar o Notion"
-      exit 1
-      fi 
-        echo "Notion instalado com SUCESSO"
-
   #GIT
   echo "Instalando Git..................."
     if ! apt install git
